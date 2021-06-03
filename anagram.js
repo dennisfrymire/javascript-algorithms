@@ -6,11 +6,11 @@ const validAnagram = (str1, str2) => {
 
     for (let val in str1) {
         let letter = str1[val];
-    // if letter exists, increment, otherwise set to 1
+    // if letter exists, increment; otherwise set to 1
         lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1;
     }
 
-    console.log(lookup);
+    
 
     for (let val in str2) {
         let letter = str2[val];
@@ -23,4 +23,4 @@ const validAnagram = (str1, str2) => {
     return true;
     }
     
-    console.log(validAnagram('tarber', 'rbater'));
+    console.log(validAnagram('tarber', 'rbtaer'));
